@@ -1,0 +1,182 @@
+
+
+.main {
+  width: 960px;
+  height: 1350px;
+  background-color: #F3F7FA;
+  margin: 0 auto;
+}
+
+.aviaTickets-logo {
+  margin: 50px auto;
+}
+
+.logo-container {
+  width: 60px;
+  margin: 0px auto;
+
+}
+
+.filter-menu {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 232px;
+  margin-left: 100px;
+  color: #4A4A4A;
+  font-family: OpenSans-Regular;
+  max-height: 252px;
+}
+
+.filter-menu--title {
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 0.5px;
+  font-family: OpenSans-Semibold;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.filter-menu--checkbox {
+  margin: 0 20px 20px 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.ant-checkbox-wrapper{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.ant-checkbox-wrapper + .ant-checkbox-wrapper{
+  margin: 0;
+}
+
+.ant-checkbox {
+  margin: 0 0 0 20px;
+}
+.ant-checkbox-wrapper:hover {
+  background-color: #F1FCFF;
+}
+.ant-checkbox-wrapper:last-child{
+  margin-bottom: 10px;
+}
+
+.main__content{
+  display: flex;
+}
+
+.tickets-area{
+  margin-left: 10px;
+  width: 500px;
+}
+
+.tabs-container{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab{
+  width: 50%;
+  text-align: center;
+  height: 50px;
+  border: 1px solid #DFE5EC;
+  background: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.ticket-container{
+  width: 100%;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket-container__title{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.ticket-container__title--price{
+  width: 50%;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2196F3;
+}
+
+.ticket-container__title--logo{
+  margin-right: 50px;
+  margin-left: auto;
+
+}
+
+.ticket-container__body{
+
+}
+
+.ticket-container__row{
+  display: flex;
+}
+
+.ticket-container__item{
+  width: 140px;
+  margin-left: 20px;
+}
+
+.ticket-container__item--title{
+  color: #A0B0B9;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.ticket-container__item--info{
+  color: #4A4A4A;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.first-row{
+  margin: 20px 0 10px 0;
+}
+
+.second-row{
+  padding-bottom: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
