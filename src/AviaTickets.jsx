@@ -3,10 +3,8 @@ import logo from './logo.svg';
 import 'antd/dist/antd.css';
 import './aviaTickets.css';
 import { Checkbox } from 'antd';
-import { Tabs } from 'antd';
 import s7Logo from './s7logo.svg'
 
-const { TabPane } = Tabs;
 
 
 
@@ -14,10 +12,48 @@ const { TabPane } = Tabs;
 class AviaTickets extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            tickets: {},
+            id: "",
+        }
+    }
+
+    componentDidMount() {
+        this.getId()
+    }
+
+    getId = () => {
+        const axios = require('axios');
+        axios.get('https://front-test.beta.aviasales.ru/search')
+            .then((response) => {
+                console.log(response.data.searchId)
+                this.setState({
+                    id: response.data.searchId,
+                })
+        })
     }
 
     render() {
+        console.log(this.state.id)
+        const axios = require('axios');
+        const url = `https://front-test.beta.aviasales.ru/tickets?searchId=${this.state.id}`
+        axios.get(url)
+            .then((response) => {
+                this.setState({
+                    tickets: response.data,
+                })
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
 
+            })
+            .then(function () {
+                // always executed
+            });
+
+        // console.log(this.state.tickets.tickets[0])
 
         return (
             <div className="main">
@@ -38,6 +74,7 @@ class AviaTickets extends React.Component {
                             <button className="tab">Самый дешевый</button>
                             <button className="tab">Самый быстрый</button>
                         </div>
+                        {/*билеты:*/}
                         <div className='ticket-container'>
                             <div className="ticket-container__title">
                                 <span className="ticket-container__title--price" >13 300</span>
