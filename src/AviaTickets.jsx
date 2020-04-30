@@ -73,7 +73,6 @@ class AviaTickets extends React.Component {
 
                             </div>
 
-
                         </div>
                     </div>
                 </div>
